@@ -166,13 +166,14 @@ as computational science attempts to tackle models that span wider
 ranges of scales, represent richer interacting physics, and inform
 decisions of greater societal consequence.
 
-Here we describe a research program (initially leveraging Brookhaven National Laboratory's experimental user facilities)
-aimed at developing {\em a
-  unified approach (mathematical, computational, and experimental) for
-  the systematic integration of complex multimodal data and complex
-  multiscale models via physics-based inference, scientific machine learning,
-  and goal-oriented optimal experimental design.}  The interaction
-between models and data occurs in two directions:
+Here we describe a research program (initially leveraging Brookhaven
+National Laboratory's experimental user facilities) aimed at
+developing {\em a unified approach (mathematical, computational, and
+  experimental) for the systematic integration of complex multimodal
+  data and complex multiscale models via physics-based inference,
+  scientific machine learning, and goal-oriented optimal experimental
+  design.}  The interaction between models and data occurs in two
+directions:
  \vspace{-0.15cm}
  \begin{itemize}%[leftmargin=10pt]
  \zapspace
@@ -194,8 +195,8 @@ between models and data occurs in two directions:
    inform inference and machine learning algorithms.
 
 \item How, where, when, and from which source to acquire experimental,
-  observational, or simulation data to optimally inform models
-  with respect to a particular goal or goals is fundamentally an {\bf
+  observational, or simulation data to optimally inform models with
+  respect to a particular goal or goals is fundamentally an {\bf
     optimal experimental design (OED) problem}. Probability provides a
   powerful approach for addressing these problems: since the inverse
   problem solution is equipped with quantified uncertainties, the OED
@@ -215,7 +216,8 @@ between models and data occurs in two directions:
   The framework described above can be applied to a host of problems
   of interest to the Department of Energy.  To make the above ideas
   concrete, however, we propose to develop the necessary mathematical
-  and computational aspects of this approach in the context materials science, biology, and nuclear physics
+  and computational aspects of this approach in the context materials
+  science, biology, and nuclear physics.
 % This includes (1) autonomous
 % optimal design of experiments for synthesis-by-assembly and (2)
 % combining machine learning with dynamical mean field theory for
@@ -227,10 +229,10 @@ between models and data occurs in two directions:
 %  mixing-and-matching nanoscale components.  In (2) the challenge is
 %  is how to enable the discovery of new materials with targeted
 %  functionalities in strongly correlated systems. 
-These applications span the space of the types of Department of Energy BES
-  experimental user facilities and stress-test the capabilities with
-  challenging problems.  The tools should be broadly applicable beyond
-  the applications here.
+These applications in these areas span the space of the types of
+Department of Energy experimental user facilities and stress-test the
+capabilities with challenging problems.  The tools should be broadly
+applicable beyond the applications discussed here.
 
 It is clear that creating the mathematical approach described
 above---in which models optimally learn from data and data acquisition
@@ -270,10 +272,11 @@ number of forward model solves) has been demonstrated to be
 independent of parameter, data, and optimization variable dimensions.
 However, significant work remains to overcome the difficulties posed
 by the most challenging multiscale, multiphysics DOE application
-problems.  Moreover, BNL's expertise in workflow design, and complex
-modeling and machine learning frameworks integrated with BNL's experimental
-facilities can be leveraged.  Key to success also requires continued
-development of theory and models for the systems of interest.
+problems.  Moreover, BNL's expertise in workflow design, performance
+modeling, and complex modeling and machine learning frameworks
+integrated with BNL's experimental facilities can be leveraged.  Key
+to success also requires continued development of theory and models
+for the systems of interest.
 
 \section{Materials Science Challenges}
 
@@ -327,10 +330,10 @@ project, because most of the components necessary for autonomous x-ray
 scattering experiments are either in place or in an advanced stage of
 development. Routine operations at CMS already utilize a series of
 automated data collection steps, and their versatility is continually
-being enhanced through improvements in software codes. Moreover, we
-have recently made significant progress with expanding accessible
-sample parameter spaces by implementing several in-situ sample
-environments and installing a robotic sample exchanger to increase
+being enhanced through improvements in software. Moreover, we have
+recently made significant progress with expanding accessible sample
+parameter spaces by implementing several in-situ sample environments
+and installing a robotic sample exchanger to increase
 throughput. Finally, the ongoing development of real-time data
 analysis pipelines and classification for x-ray scattering images is
 now mature enough for initial deployment and testing at
@@ -338,37 +341,38 @@ CMS. Nevertheless, these developments alone are insufficient, allowing
 for parameter-space explorations that are only exhaustive or
 intuition-guided. By closing the feedback loop with an automated
 decision-making capability that is well informed by available
-knowledge, this project will enable autonomous experiments that can
-navigate intelligently through enormous parameter spaces.  Overall,
-this project will empower a bold new vision of materials discovery,
-wherein scientists can define their scientific problem at a high
-level, as an optimization target, and allow the x-ray scattering
-instrument to autonomously discover relevant physics. We will focus on
-solving specific experimental materials science problems, so that we
-can (1) demonstrate proof-of-concept (as a basis for future funding),
-(2) develop new generalizable algorithms for autonomous
-experimentation, and (3) uncover new physical insights for the
-selected materials systems. This work will establish a capability at
-BNL for model-based control and design of experiments to accelerate
-discovery at experimental facilities. The novelty of the computational
-science and applied mathematics will be in the development of accurate
-and scalable approximate methods for optimal experimental design
-problems under uncertainty.
-% that scale well with computational resources.
+knowledge (in the form of mathematical models), this project will
+enable autonomous experiments that can navigate intelligently through
+enormous parameter spaces.  Overall, this project will empower a bold
+new vision of materials discovery, wherein scientists can define their
+scientific problem at a high level, as an optimization target, and
+allow the x-ray scattering instrument to autonomously discover
+relevant physics. We will focus on solving specific experimental
+materials science problems, so that we can (1) demonstrate
+proof-of-concept, (2) develop new
+generalizable algorithms for autonomous experimentation, and (3)
+uncover new physical insights for the selected materials systems. This
+work will establish a capability at BNL for model-based control and
+design of experiments to accelerate discovery at experimental
+facilities. 
+%The novelty of the computational science and applied
+%mathematics will be in the development of accurate and scalable
+%pproximate methods for optimal experimental design problems under
+%uncertainty.
 
 \subsection{Strongly Correlated Systems}
-
-One of the most challenging questions in the field of materials
-science is how to enable the discovery of new materials with targeted
-functionalities. Materials of interest range over binary, ternary,
-quaternary, and quinary combinations of a wide range of elements,
-rendering the material phase space immense.  Multiple strategies do
-exist to attempt to classify this space.  In one, one uses massive
-simulations in an attempt to explore the phase space for particular
-properties. In another, one uses data mining of large bodies of
-existing experimental data in order to determine structure-property
-relations.  A more recent approach that has been applied recently to
-weakly correlated materials such as zeolite structures,
+Strongly correlated systems represent an addition class of challenging
+problems in the field of materials science -- in particular, how to
+enable the discovery of new strongly correlated materials with
+targeted functionalities. Materials of interest range over binary,
+ternary, quaternary, and quinary combinations of a wide range of
+elements, rendering the material phase space immense.  Multiple
+strategies do exist to attempt to classify this space. One such
+strategy uses massive simulations in an attempt to explore the phase
+space for particular properties. In another, one uses data mining of
+large bodies of existing experimental data in order to determine
+structure-property relations.  A more recent approach that has been
+applied to weakly correlated materials such as zeolite structures,
 inorganic/organic hybrids, and semiconducting heterostructures is
 machine learning.  Machine learning algorithms allow one to perform
 predictive analytics based on the detection of patterns and
@@ -384,12 +388,11 @@ Machine learning-informed investigation of weakly correlated material
 spaces has seen some progress, both because theoretical tools exist to
 accurately predict material properties for weakly correlated materials
 and because high-throughput synthesis and characterization is possible
-In weakly correlated materials, we have
-a set of well-developed theoretical tools such as Density Functional
-Theory (DFT) that are able to describe their properties. DFT is able
-to do so because the properties of these materials are determined in a
-single electron picture, i.e., electronic band theory is
-correspondingly applicable.
+In weakly correlated materials, we have a set of well-developed
+theoretical tools such as Density Functional Theory (DFT) that are
+able to describe their properties. DFT is able to do so because the
+properties of these materials are determined in a single electron
+picture, i.e., electronic band theory is correspondingly applicable.
 
 While weakly correlated materials have been studied using machine
 learning, the field of strongly correlated materials has lain
@@ -442,43 +445,138 @@ beam epitaxy techniques together with characterization using the
 beamlines at BNL's NSLS-II.
 
 \section{Biological Science Challenges}
+
 \subsection{Systems Biology for Bioenergy Production}
-The long-term vision of Biological Systems Science is to enable predictive biology. To meet this goal, it has been recognized that biological complexity must be both embraced and leveraged. Key will be determining each of the genome-encoded factors contributing to biochemical pathways of interest, their specific molecular function and how they interact. Understanding these interactions in sufficient detail to allow system behavior to be predicted, even in response to significant environmental perturbations, will be crucial for robust genome-scale redesign of bioenergy. 
-As molecular biology has transitioned to systems biology in the post-genomic era, the adoption of in silico approaches has become essential in data-centric modern biology. One manifestation of this movement has been the development of constraint based models of cellular metabolism, wherein the cellular, stoichiometric and enzyme reaction limits are defined, and all allowable solutions may be searched. Within defined space, the model may be optimized to allow for optimal production of for example a key metabolite of specific interest, or enable optimal cell viability when presented with limited nutrients. However, for the aforementioned reasons these models are far from complete. Only a small fraction of any given genomes encoded enzymes are sufficiently characterized to come close to mapping a model representative of a complete cell. Very few models are sufficiently sophisticated to incorporate individual cellular spaces and the kinetics of trafficking metabolites between these spaces. Instead, pathways unique to mitochondria or chloroplasts in plant cells are often assumed to also occur in the cytoplasm. Metabolic models also suffer from being informed by data gained from a handful of model organisms (e.g. Escherichia coli, or Saccharomyces cerevisae), which are generically assumed to be representative of very distantly related organism.
-The current absence of the foundational knowledge surrounding protein function, regulation and interaction serves as a barrier for model improvement and consequently the ultimate goal of biological predictive design. This comes in spite of a series of significant recent milestones in biology: i) every organism genome (or ecosystem) is amenable to genomic and post-genomic (e.g. RNA-Seq) analysis, ii) access and availability of this genome-sourced data is democratized across in silico platforms iii) gene synthesis is both rapid and cost-effective iv) the development of techniques enabling genome-scale precision editing. Consequently, and paradoxically, molecular biologists are faced with being able to engineer biological systems genome-wide, but lacking the insight of what or how to optimally rewire metabolism for designed gain. Given this, many engineering projects have met with limited success: knowing what to engineer and how to engineer it to achieve a desired outcome remains a bottleneck. This is especially the case in plants, which, due to genome size, ploidy extensive genetic radiation and until recently limited genetic tools, have remained far less intensively studied than other domains of life.
-We have established the Quantitative Plant Science Initiative (QPSI) at BNL as a scalable capability combining multi-disciplinary expertise and state-of-the-art high throughput (HTP) technologies. Specifically, the purpose of this capability is to accelerate the acquisition of systems-level functional knowledge that will enable predictive plant biology. One core component of the capability exploits the rapid growth rate and genetic tractability of microbial photosynthetic organisms, which maintain most of protein-coding repertoire of more complex land plants, in combination with laboratory automation. Via experimental miniaturization we are able to use these microbial plants to generate near-genome-saturating mutant libraries in approximately 2 hrs by high-efficiency transformation with a selectable gene cassette marker. The marker integrates at random in the genome and disrupts the function of any gene into which it inserts. Robot-enabled mutant picking, arraying, and compression into 384-well microplates is followed by automated simultaneous screening of 30,000 single-gene disrupted lines under defined growth conditions, with each screening cycle taking around 5 days to complete. This experimental setup enables us to probe at a genome-scale level all genes involved in any process we choose to screen for.
-Having identified genes of previously unknown function in the process described above, a second core component of QPSI involves the engineering of proteins for improved performance. This is done by both rational design methods, for example introducing mutations into the active site of an enzyme, or by non-targeted directed evolution methods. The mutated proteins resulting from either of these approaches are screened for activity and those resulting in the greatest improvement can be engineered into the organism’s genome.
-Both of these components serve to gain from application of optimal experimental design. Since our phenome screening experiments can be either independent or iterative, being provisioned with guidance as to the next most appropriate screen, or which collection of genes next to target, towards a defined end goal may result in significant time and reagent expenditure. Secondly, it is highly likely that our engineering will yield multiple single nucleotide polymorphism (SNP) mutations that result in higher activity. Knowing specifically which combinations of these mutations to reconstitute on the genome for the greatest overall gain is both protein-specific and largely unknown. Intuitively, and in the possible absence of information (such as a crystal structure), reengineering a handful of SNPs with the greatest individual activity increase will lead to the greatest overall increase. In reality it is unknown how these SNPs will interact and/or influence the three-dimensional shape. Exploiting OED to learn from iterative rounds of genome engineering efforts and future guidance for selecting mutations to carry forwards will potentially lead to increased understanding of how to engineer proteins as well as expediting a route to optimized improvements. Finally, development and implementation of the underlying math and computation for these specific cases will major positive outcomes in other areas of biology and healthcare.  
+
+The long-term vision of Biological Systems Science is to enable
+predictive biology. To meet this goal, it has been recognized that
+biological complexity must be both embraced and leveraged. Key will be
+determining each of the genome-encoded factors contributing to
+biochemical pathways of interest, their specific molecular function
+and how they interact. Understanding these interactions in sufficient
+detail to allow system behavior to be predicted, even in response to
+significant environmental perturbations, will be crucial for robust
+genome-scale redesign of bioenergy.  As molecular biology has
+transitioned to systems biology in the post-genomic era, the adoption
+of in silico approaches has become essential in data-centric modern
+biology. 
+
+One manifestation of this movement has been the development of
+constraint based models of cellular metabolism, wherein the cellular,
+stoichiometric and enzyme reaction limits are defined, and all
+allowable solutions may be searched. Within defined space, the model
+may be optimized to allow for optimal production of for example a key
+metabolite of specific interest, or enable optimal cell viability when
+presented with limited nutrients. However, for the aforementioned
+reasons these models are far from complete. Only a small fraction of
+any given genomes encoded enzymes are sufficiently characterized to
+come close to mapping a model representative of a complete cell. Very
+few models are sufficiently sophisticated to incorporate individual
+cellular spaces and the kinetics of trafficking metabolites between
+these spaces. Instead, pathways unique to mitochondria or chloroplasts
+in plant cells are often assumed to also occur in the
+cytoplasm. Metabolic models also suffer from being informed by data
+gained from a handful of model organisms (e.g. Escherichia coli, or
+Saccharomyces cerevisae), which are generically assumed to be
+representative of very distantly related organisms.
+
+The current absence of the foundational knowledge surrounding protein
+function, regulation and interaction serves as a barrier for model
+improvement and consequently the ultimate goal of biological
+predictive design. This comes in spite of a series of significant
+recent milestones in biology: i) every organism genome (or ecosystem)
+is amenable to genomic and post-genomic (e.g. RNA-Seq) analysis, ii)
+access and availability of this genome-sourced data is democratized
+across in silico platforms iii) gene synthesis is both rapid and
+cost-effective iv) the development of techniques enabling genome-scale
+precision editing. Consequently, and paradoxically, molecular
+biologists are faced with being able to engineer biological systems
+genome-wide, but lacking the insight of what or how to optimally
+rewire metabolism for designed gain. Given this, many engineering
+projects have met with limited success: knowing what to engineer and
+how to engineer it to achieve a desired outcome remains a
+bottleneck. This is especially the case in plants, which, due to
+genome size, ploidy extensive genetic radiation and until recently
+limited genetic tools, have remained far less intensively studied than
+other domains of life.  We have established the Quantitative Plant
+Science Initiative (QPSI) at BNL as a scalable capability combining
+multi-disciplinary expertise and state-of-the-art high throughput
+(HTP) technologies. Specifically, the purpose of this capability is to
+accelerate the acquisition of systems-level functional knowledge that
+will enable predictive plant biology. One core component of the
+capability exploits the rapid growth rate and genetic tractability of
+microbial photosynthetic organisms, which maintain most of
+protein-coding repertoire of more complex land plants, in combination
+with laboratory automation. Via experimental miniaturization we are
+able to use these microbial plants to generate near-genome-saturating
+mutant libraries in approximately 2 hrs by high-efficiency
+transformation with a selectable gene cassette marker. The marker
+integrates at random in the genome and disrupts the function of any
+gene into which it inserts. Robot-enabled mutant picking, arraying,
+and compression into 384-well microplates is followed by automated
+simultaneous screening of 30,000 single-gene disrupted lines under
+defined growth conditions, with each screening cycle taking around 5
+days to complete. This experimental setup enables us to probe at a
+genome-scale level all genes involved in any process we choose to
+screen for.  Having identified genes of previously unknown function in
+the process described above, a second core component of QPSI involves
+the engineering of proteins for improved performance. This is done by
+both rational design methods, for example introducing mutations into
+the active site of an enzyme, or by non-targeted directed evolution
+methods. The mutated proteins resulting from either of these
+approaches are screened for activity and those resulting in the
+greatest improvement can be engineered into the organism’s genome.
+Both of these components serve to gain from application of optimal
+experimental design. Since our phenome screening experiments can be
+either independent or iterative, being provisioned with guidance as to
+the next most appropriate screen, or which collection of genes next to
+target, towards a defined end goal may result in significant time and
+reagent expenditure. Secondly, it is highly likely that our
+engineering will yield multiple single nucleotide polymorphism (SNP)
+mutations that result in higher activity. Knowing specifically which
+combinations of these mutations to reconstitute on the genome for the
+greatest overall gain is both protein-specific and largely
+unknown. Intuitively, and in the possible absence of information (such
+as a crystal structure), reengineering a handful of SNPs with the
+greatest individual activity increase will lead to the greatest
+overall increase. In reality it is unknown how these SNPs will
+interact and/or influence the three-dimensional shape. Exploiting OED
+to learn from iterative rounds of genome engineering efforts and
+future guidance for selecting mutations to carry forwards will
+potentially lead to increased understanding of how to engineer
+proteins as well as expediting a route to optimized
+improvements. Finally, development and implementation of the
+underlying math and computation for these specific cases will major
+positive outcomes in other areas of biology and healthcare.
 
 \subsection{Adaptive Free Energy of Binding of Small Molecules}
 
-The strength of drug binding is determined by a thermodynamic property known
-as the binding free energy (BFE). One promising technology for estimating
-binding free energies and the influence of protein and ligand composition upon
-them is molecular dynamics (MD) A diversity of methodologies have been
-developed to calculate binding affinities MD sampling and blind tests show
-that many have considerable predictive potential. With the demands of clinical
-decision support and drug design applications in mind, several computational
-protocols to compute BFE that have been designed recently. To name just a
-couple: ESMACS (enhanced sampling of molecular dynamics with approximation of
+The strength of drug binding is determined by a thermodynamic property
+known as the binding free energy (BFE). One promising technology for
+estimating binding free energies and the influence of protein and
+ligand composition upon them is molecular dynamics (MD) A diversity of
+methodologies have been developed to calculate binding affinities MD
+sampling and blind tests show that many have considerable predictive
+potential. With the demands of clinical decision support and drug
+design applications in mind, several computational protocols to
+compute BFE that have been designed recently. To name just a couple:
+ESMACS (enhanced sampling of molecular dynamics with approximation of
 continuum solvent) and TIES (thermodynamic integration with enhanced
 sampling).
 
-BFE protocols also address the hitherto lack of reproducibility of individual
-simulations for a variety of protein systems. The reproducibility of these
-protocols is statistical, in that it overcomes the lack of accuracy of single
-simulations, by employing ensemble-based molecular dynamics, where an
-``ensemble'' refers to the set of replicas. Averaging across multiple runs can
-reliably produce results in agreement with previously published experimental
-findings.
-
-
-\noindent {\bf Importance of Adaptivity for BFE Protocols:} An adaptive application
-workflow is defined as one for which the execution task graph changes during
-the runtime of the application workflow. The task graph could evolve due to
-any one of several different factors. For example, a change in the underlying
-protocol (algorithm), a change in the resource performance characterization,
-or an event of interest (e.g., convergence critieria reached or lack of
+BFE protocols also address the hitherto lack of reproducibility of
+individual simulations for a variety of protein systems. The
+reproducibility of these protocols is statistical, in that it
+overcomes the lack of accuracy of single simulations, by employing
+ensemble-based molecular dynamics, where an ``ensemble'' refers to the
+set of replicas. Averaging across multiple runs can reliably produce
+results in agreement with previously published experimental findings.
+An adaptive application workflow is defined as one for which the
+execution task graph changes during the runtime of the application
+workflow. The task graph could evolve due to any one of several
+different factors. For example, a change in the underlying protocol
+(algorithm), a change in the resource performance characterization, or
+an event of interest (e.g., convergence critieria reached or lack of
 convergence in a given window).
 
 A driver for adaptivity in BFE calculations is that different protocols
@@ -492,16 +590,6 @@ execution time while still improving the accuracy of candidate compounds.
 Adaptive methods which minimize the compute time used whilst producing binding
 free energy estimates meeting pre-defined quality criteria (such as
 convergence or statistical uncertainty below a given theshold).
-
-% BFE protocols have been sucessfully used to predict binding affinities quickly
-% and accurately. Nonetheless, they are very expensive computationally, and
-% optimizing the execution time while still improving the accuracy is necessary.
-% Given the very large number of drug candidates, it is imperative to gain
-% maximum insight into potential candidate compounds using time and resources
-% efficiently. This provides one clear motivation for the use of adaptive
-% methods which minimize the compute time used whilst producing binding free
-% energy estimates meeting pre-defined quality criteria (such as convergence or
-% statistical uncertainty below a given theshold).
   
 In protocols such as TIES or ESMACS the number of ensemble members that will
 most impact the calculation are not known \textit{a priori}, and change
@@ -519,9 +607,9 @@ used at run time. With potentially thousands of simulations, often employing
 multiple analysis methodologies, this provides the most effective way to
 utilize these techniques and resources at scale.
 
-\noindent {\bf Mathematical Formulation of the Adaptive Execution: } We believe the
-problem of determining an optimal execution strategy for concurrent stochastic
-simulations can be formulated as:
+\noindent {\em Mathematical Formulation of the Adaptive Execution: }
+We believe the problem of determining an optimal execution strategy
+for concurrent stochastic simulations can be formulated as:
 
 Imagine there are N resources and these can be run in parallel. There are M
 different stochastic algorithms which calculate the same quantity of interest
@@ -542,24 +630,15 @@ strategies include: (i) Greater sampling and higher throughput of drug
 candidates; (ii) more accurate binding affinity calculations, and (iii)
 Efficient resource utilization.
 
-\noindent {\bf Challenges of Adaptive Execution: } The phase space of possible
-execution strategies is large and is sensitive to algorithm (BFE protocol),
-size of ensemble, and must be computed in real-time. Furthermore, there are
-different metrics for which optimal solutions might be desired. For example,
-some times an optimal strategy for different drug candidates to determine the
-maximal convergence for a given (fixed) amount of computing capacity
-(resources) is required. Some times, for a fixed level of convergence, optimal
-utilization of computational resources are needed.
-
-% The sampling of each drug candidate varies; thus using a static and 
-% pre-determined computational time, results in a large variation in the accuracy of
-% the BFE. Further, the performance of resources fluctuate: planning for
-% resource utilization against a backdrop of varying resource performance and
-% application-level changes.
-
-% (i) Determining accurately the amount/degree of sampling, (ii)  Resource
-% Selection and Utilization problem
-
+\noindent {\em Challenges of Adaptive Execution: } The phase space of
+possible execution strategies is large and is sensitive to algorithm
+(BFE protocol), size of ensemble, and must be computed in
+real-time. Furthermore, there are different metrics for which optimal
+solutions might be desired. For example, some times an optimal
+strategy for different drug candidates to determine the maximal
+convergence for a given (fixed) amount of computing capacity
+(resources) is required. Some times, for a fixed level of convergence,
+optimal utilization of computational resources are needed.
 
 \section{Nuclear Physics Challenges}
  
@@ -571,24 +650,22 @@ regime the unbound quarks and gluons move coherently in a nearly
 perfect (lowest theoretical viscosity) liquid like-state.
 Understanding the nature of this exciting state of matter and how it
 is created is one of the great challenges of QCD physics.  The
-Relativistic Heavy Ion Collider (RHIC) at BNL has created a QGP, and 
-has begun to explore the engineering of its properties, by varying 
-the beam energy and species of the colliding nuclei that we use to 
-form the QGP, and by taking advantage of the natural
-variation in the initial conditions for its formation.  As a
-result of the time and spatial scales involved, however, one cannot
-directly observe the QGP state and its nature must be determined by
-marrying experimental data of a later stage in the process with
-uncertain physics models of the dynamics.  This requires
-multiscale/multiphysics and Bayesian inversion methods to infer the
-unseen state.  
+Relativistic Heavy Ion Collider (RHIC) at BNL has created a QGP, and
+has begun to explore the engineering of its properties, by varying the
+beam energy and species of the colliding nuclei that we use to form
+the QGP, and by taking advantage of the natural variation in the
+initial conditions for its formation.  As a result of the time and
+spatial scales involved, however, one cannot directly observe the QGP
+state and its nature must be determined by marrying experimental data
+of a later stage in the process with uncertain physics models of the
+dynamics.  This requires multiscale/multiphysics and Bayesian
+inversion methods to infer the unseen state.
 
- With the diversity
-and complexity of the physical processes involved, mathematical
-challenges abound in inferring the QGP dynamics.  First the spatial
-and time scales range from $10^{-15}$ meters to $10^{1}$ m.  For the
-first $10^{-23}$ seconds after formation the QGP dynamics has a
-continuum description in terms of relativistic hydrodynamics.
+With the diversity and complexity of the physical processes involved,
+mathematical challenges abound in inferring the QGP dynamics.  First
+the spatial and time scales range from $10^{-15}$ meters to $10^{1}$
+m.  For the first $10^{-23}$ seconds after formation the QGP dynamics
+has a continuum description in terms of relativistic hydrodynamics.
 However, this early stage is not directly observable.  As time
 evolves, the density decreases and a kinetic stage kicks in which is
 governed by a Boltzmann equation.  The system evolves from a QGP
@@ -606,126 +683,479 @@ ensemble of the forward models evolutions.  Model reduction and an
 optimal design of computer experiments (as well as actual accelerator
 / experimental design) is needed for a more complete understanding of
 QGPs. To date, the problem has been simplified to one of estimating
-$O(10)$ parameters for the model and for the initial
-condition \cite{bernhard2016applying, bernhard2015quantifying,
-auvinen2016systematic, bernhard2017characterization,
-bass2017determination}.  We will attempt to incorporate greater model
-uncertainty and to invert for more of the physical state at various
-times during the experiment.
+$O(10)$ parameters for the model and for the initial condition We will
+attempt to incorporate greater model uncertainty and to invert for
+more of the physical state at various times during the experiment.
 
-We propose to take a 3-part strategy to applying the tools
-developed by this research towards the study of the QGP.
-In the first stage, we will explore an optimization of the 
-upcoming Beam Energy Scan program beginning in FY19.
-In the Beam Energy Scan program, RHIC will 
-explore the QCD phase diagram by changing the baryon doping 
-of the QGP, enabled by changing the beam energy of
-the colliding ions, in order to find, or exclude, a conjectured
-critical point.  The measures sensitive to the critical point
-are well understood, as are the costs and benefits of running
-at a certain beam energy.  The question to be answered is 
-what combination of beam energies, with what amount of
-running time, would maximize the potential of the critical
-point search.
+We propose to take a 3-part strategy to applying the tools developed
+by this research towards the study of the QGP.  In the first stage, we
+will explore an optimization of the upcoming Beam Energy Scan program
+beginning in FY19.  In the Beam Energy Scan program, RHIC will explore
+the QCD phase diagram by changing the baryon doping of the QGP,
+enabled by changing the beam energy of the colliding ions, in order to
+find, or exclude, a conjectured critical point.  The measures
+sensitive to the critical point are well understood, as are the costs
+and benefits of running at a certain beam energy.  The question to be
+answered is what combination of beam energies, with what amount of
+running time, would maximize the potential of the critical point
+search.
 
-In the second stage, we will explore the optimization
-of the allocation of data bandwidth within the experiment.
-All collider experiments cannot record full event information
-for every collision that occurs in the collider, but use a combination
-of partial event information and fast processing (usually in FPGA's)
-to tag in real time (at multi-MHz speed) those events
-that are most interesting for later analysis.  This process is 
-called ``triggering'', with the result that the limited bandwidth
-of full events written to the computer farm for later analysis
-is filled by a suite of different ``triggers'', up to 64 in the 
-case of the STAR experiment, each of which is targeted to
-a specific physics program, with its own false positive
-rate and efficiency for selecting the events of interest.
- The relative population of triggers are controllable, 
-via trigger definition and random
-sampling, and change with time as the conditions in the 
-collider change.  The question to be answered is the optimization
-of this trigger population to maximize the physics potential, in real time,
-given the constraints and conditions of the collider and experiment.
+In the second stage, we will explore the optimization of the
+allocation of data bandwidth within the experiment.  All collider
+experiments cannot record full event information for every collision
+that occurs in the collider, but use a combination of partial event
+information and fast processing (usually in FPGA's) to tag in real
+time (at multi-MHz speed) those events that are most interesting for
+later analysis.  This process is called ``triggering'', with the
+result that the limited bandwidth of full events written to the
+computer farm for later analysis is filled by a suite of different
+``triggers'', up to 64 in the case of the STAR experiment, each of
+which is targeted to a specific physics program, with its own false
+positive rate and efficiency for selecting the events of interest.
+The relative population of triggers are controllable, via trigger
+definition and random sampling, and change with time as the conditions
+in the collider change.  The question to be answered is the
+optimization of this trigger population to maximize the physics
+potential, in real time, given the constraints and conditions of the
+collider and experiment.
 
-In the third stage, we will extend these techniques to 
-higher dimensional hydrodynamic modeling.  Besides
-the search for the critical point, a wider goal of the Beam Energy
-Scan is to explore how the hydrodynamic properties
-of the QGP, such as the viscosity, change with baryon 
-doping and initial temperature, in order to take 
-full advantage of the three orders of magnitude span
-in available collision energy with the combined data from RHIC
-and the LHC.   
+In the third stage, we will extend these techniques to higher
+dimensional hydrodynamic modeling.  Besides the search for the
+critical point, a wider goal of the Beam Energy Scan is to explore how
+the hydrodynamic properties of the QGP, such as the viscosity, change
+with baryon doping and initial temperature, in order to take full
+advantage of the three orders of magnitude span in available collision
+energy with the combined data from RHIC and the LHC.
 
- In addition to providing higher confidence in the
-description of QGP physics, this motivating application provides a
-representative testbed for a set of experiments where no direct
-observation is possible but only an inversion of multiscale and
-multiphysics processes are available only at later times.  Such
-applications appear in a host of other exciting and important
-dynamical inverse problems including earth science, climate, medical
-imaging. The methods developed here could benefit optimal use of large
-experimental facilities as well as in their design.  Moreover, BNL is
-in the process of developing the experimental program for a future
-Electron-Ion Collider (EIC) collider at BNL (eRHIC). The design
-considerations of the experiments are derived from the detection of
-the different signatures. Each signature carries its own experimental
-challenges and include feedback to how well one can constrain the
-theoretical predictions.  The optimization of the eRHIC design and
-experiments could make use of the mathematical and algorithmic methods
-developed in Diamond2.  This is important for the RHIC program, e.g.,
-identifying the optimal set of beam energies for the beam energy scan
-to search for a critical point, and to select optimal collision
-systems by asking the question which data would be most impactful with
-respect to answering specific physics questions.  The methods here
-could also provide a breakthrough for the design of optimal detector
-configurations (acceptance, solution, etc.) for future EIC
-experiments.
+In addition to providing higher confidence in the description of QGP
+physics, this motivating application provides a representative testbed
+for a set of experiments where no direct observation is possible but
+only an inversion of multiscale and multiphysics processes are
+available only at later times.  Such applications appear in a host of
+other exciting and important dynamical inverse problems including
+earth science, climate, medical imaging. The methods developed here
+could benefit optimal use of large experimental facilities as well as
+in their design.  Moreover, BNL is in the process of developing the
+experimental program for a future Electron-Ion Collider (EIC) collider
+at BNL (eRHIC). The design considerations of the experiments are
+derived from the detection of the different signatures. Each signature
+carries its own experimental challenges and include feedback to how
+well one can constrain the theoretical predictions.  The optimization
+of the eRHIC design and experiments could make use of the mathematical
+and algorithmic methods developed in Diamond2.  This is important for
+the RHIC program, e.g., identifying the optimal set of beam energies
+for the beam energy scan to search for a critical point, and to select
+optimal collision systems by asking the question which data would be
+most impactful with respect to answering specific physics questions.
+The methods here could also provide a breakthrough for the design of
+optimal detector configurations (acceptance, solution, etc.) for
+future EIC experiments.
 
+\section{Mathematical Foundations}
 
+Inverse problems problems formalize the process of learning about a
+system through indirect, noisy, and often incomplete
+observations. Casting inverse problems in a Bayesian setting provides
+a natural framework for quantifying uncertainty in parameter values
+and model predictions, for fusing heterogeneous sources of
+information—collected at multiple scales—and for optimally selecting
+experiments/ observations. New statistical and mathematical
+formulations of inverse problems, incorporating models of system
+behavior at multiple scales, are central to Diamond-2’s IRT on
+data–model integration.  These new formulations must be joined with
+efficient, structure-exploiting, scalable solution approaches.  The
+computational challenges of large-scale Bayesian inversion are myriad:
+expensive forward models, high/infinite-dimensional parameter spaces,
+nonlinearity, and non-Gaussian target distributions. New formulations
+described elsewhere in this proposal bring additional challenges:
+stochastic forward models and intractable likelihoods due to
+incorporation of stochastic inadequacy operators; hierarchical models
+for the multiscale setting; high-dimensional multimodal data; and the
+need for inversion to proceed in a sequential fashion, conditioning on
+newly-arrived data with a constant computational effort.
+
+Optimal Experimental Design Significance. OED seeks to construct
+(“design”) a data acquisition effort—e.g., carefully controlled
+experiments, field observations, and/or computer simulations—that
+optimally provides information relevant to a chosen operational
+objective. Given limited experimental or simulation budgets,
+experiments that, for instance, have a high expectation of reducing
+uncertainty ought to be performed, while other potential experiments
+can be omitted. Underlying this broad goal are a host of
+challenges. Depending on the application, OED for complex systems may
+need to incorporate model uncertainty; model inadequacy and stochastic
+forward models; objectives that range from uncertainty reduction in
+parameters or predictions to performance maximization in an
+engineering system; sequential design that allows feedback between
+multiple experiments; model-based methods for summarizing or reducing
+large data sets; and generalized costs or constraints on experimental
+budgets. Considerable theoretical and computational advances are
+needed to surmount these challenges for real-world applications.
 
 
 \section{Software System for High-Performance Optimal Experimental Design}
 
 The above science drivers span a wide range of domains as well as
-computational requirements. In addition to traditional high-performance
-computing requirements for computational kernels (linear algebra and
-differential equation solvers in strongly correlated materials, molecular
-dynamics for free energy calculations), there are requirements for (i) real-
-time data processing (synthesis by assembly), (ii) development and integration
-of high-performance machine learning algorithms with simulations (most science
-drivers), and (iii) the need to integrate diverse capabilities into scalable,
-sophisticated and extensible workflows. These capabilities must span a range
-of diverse software systems and evolving heterogeneous architectures and HPC
-platforms.
+computational requirements. In addition to traditional
+high-performance computing requirements for computational kernels
+(linear algebra and differential equation solvers in strongly
+correlated materials, molecular dynamics for free energy
+calculations), there are requirements for (i) real- time data
+processing (synthesis by assembly), (ii) development and integration
+of high-performance machine learning algorithms with simulations (most
+science drivers), and (iii) the need to integrate diverse capabilities
+into scalable, sophisticated and extensible workflows. These
+capabilities must span a range of diverse software systems and
+evolving heterogeneous architectures and HPC platforms.
 
-Whereas no single science driver will require all capabilities simultaneously,
-in order to encourage interoperability and reuse, the software systems for
-high-performance optimal experimental design must be architected and
-implemented to support diverse usage modes, different combinations of
-capabilities with minimal customization, refactoring or new development.
-Delivering software system with these capabilities is as much a research
-question as an engineering challenge.
+Whereas no single science driver will require all capabilities
+simultaneously, in order to encourage interoperability and reuse, the
+software systems for high-performance optimal experimental design must
+be architected and implemented to support diverse usage modes,
+different combinations of capabilities with minimal customization,
+refactoring or new development.  Delivering software system with these
+capabilities is as much a research question as an engineering
+challenge.
+
+\section{Performance Modeling}
+
+Thus far, we have considered the optimization of the experiment/theory
+loop and an accompanying software stack with which to enable the
+process.  Implicit have the computational resources available.
+However we can further impact the performance of OED by the selection
+of appropriate, existing resources, or ideally, facilitate the design
+of new, targeted architectures.  This selection/design can be guided
+by a modeling/simulation capability of the computer resources
+themselves. That is we can further apply a practical theory of
+computational resources that models the code (therefore implicitly the
+algorithm, theory of the physical experiment itself etc) and compute
+architecture pair.
+
+Computing challenges arise at several points in the overall process -
+solving the model equations of the physical process, solving for the
+optimal design under uncertainty, and finally computing at the
+interface of the experiments and detectors.  In this overall process,
+computing and theory go hand in hand. A theory / equation that's
+computationally too challenging to solve is essentially useless for
+goal-oriented problem solving.  Different formulations of the problem
+and/or selections/design of computing architectures better suited to
+goal oriented resource constrained problem solving may be needed.
+Ultimately this overall process should guide the research and
+development of new experimental technologies.
 
 \section{Concluding Remarks}
 
 \newpage
 
-
-
 \begin{center}
-CONTRIBUTORS (SO FAR)
-\normalsize Francis Alexander, Ian Blaby, Masafumi Fukuto, Nicholas D'Imperio, Adolfy Hoisie,
-Shantenu Jha, Kerstin Kleese van Dam, Robert Konik, Gabi Kotliar,
-Kevin Yager, Shinjae Yoo (Brookhaven National Laboratory), Omar
-Ghattas, J. Tinsley Oden (UT Austin), Karen Willcox, Youssef Marzouk
-(MIT), Edward R. Dougherty, Xiaoning Qian (Texas A\&M), Kristofer
-Reyes (Buffalo), Lav Varshney (Univ. of Illinois)
-
+CONTRIBUTORS 
+\normalsize 
 \end{center}
 
+\bf{Brookhaven National Laboratory}\\
+Francis Alexander\\ 
+Ian Blaby\\
+James Dunlop\\
+Masafumi Fukuto\\
+Nicholas D'Imperio\\
+Adolfy Hoisie\\
+Shantenu Jha\\
+Kerstin Kleese van Dam\\
+Robert Konik\\
+Gabi Kotliar\\
+Kevin Yager\\
+Shinjae Yoo \\
+
+\vskip 0.25in
+\bf{Buffalo University}\\
+Kristofer Reyes \\
+
+\vskip 0.25in
+\bf{MIT}\\
+Youssef Marzouk\\
+Karen Willcox\\
+
+\vskip 0.25in
+\bf{Texas A \& M University}\\
+Edward R. Dougherty\\
+Xiaoning Qian 
+
+\vskip 0.25in
+\bf{University of Illinois}\\
+Lav Varshney \\
+
+\vskip 0.25in
+\bf{University of Texas, Austin}\\
+Omar Ghattas\\
+J. Tinsley Oden
 
 \end{document}
 
 
+
+
+
+Prior work and future challenges. Motivated by advances in theory and
+numerical algorithms for large-scale Bayesian inverse problems, work
+under Diamond-1 began to consider the problem of optimal Bayesian
+experimental design for systems governed by PDEs. In this context, OED
+aims to design an observing system (e.g., locations of sensors) such
+that the results of inference are optimal in a well-defined sense. We
+pursued two parallel but complementary approaches: one based on an
+information theoretic design criterion—maximizing the expected Shannon
+information gain in the parameters—making no assumptions of linearity
+or Gaussianity; and a second that generalizes classical alphabetic
+A-optimality to the weakly nonlinear and non-Gaussian case. The first
+approach has emphasized design optimality in relatively
+low-dimensional settings where nonlinearity and non-Gaussianity are
+significant, while the second has emphasized scalability to expensive
+models and infinite-dimensional parameter spaces under the Laplace
+approximation [5] with application to a state estimation problem for
+atmospheric contaminant transport [6]. The result is an OED method
+that scales independently of the parameter dimension, data dimension,
+and observation dimension. Nonlinear generalizations of this approach
+minimize the average variance of a Gaussian approximation to the
+inversion parameters at the posterior mode [7,54].  There remain
+considerable challenges in goal-oriented OED, where ultimate
+objectives other than parameter inference determine design
+criteria. Also, many applications require choosing among very di↵erent
+(yet potentially complementary) sources of data, each with its own
+forward model and likelihood.  Fusing heterogeneous data presents
+particular challenges in the stochastic inverse problem setting.
+There are many open questions—and very few e↵ective computational
+methods—for optimal sequential experimental design, and for principled
+(model-based) data reduction in large-scale settings.  Research
+goals. Our proposed work will advance the state of the art in OED
+along two axes: developing richer and more flexible OED formulations
+for complex problems, and developing more efficient and scalable
+computational approaches for OED in realistic instantiations of these
+problems.  Specific e↵orts include dynamic programming approaches to
+optimal sequential Bayesian experimental design, experimental design
+in the presence of model inadequacy (a crucial but often ignored
+issue), and computational methods that bridge large-scale linearized
+approaches with fully non-Gaussian sampling approaches for the
+evaluation and optimization of design objectives. We will also explore
+tensor algorithms for data reduction that exploit the full statistical
+structure of the inverse problem (with forward model, likelihood, and
+prior) in the Bayesian setting. Most of these developments are part of
+IRT2 (§4.2), as they center on the optimal acquisition and processing
+of data. But there are also strong links to IRT1 (§4.1, model
+inadequacy formulations) and IRT3 (§4.3, inverse problem solution
+methodologies and sequential Bayesian inference); OED algorithms will
+incorporate advances in all of these other areas.
+
+
+Data: Reduction, Fidelity, and Optimal Experimental Design The second
+thrust encompasses research challenges associated with multimodal
+data, where data refers to experimental, observational, or simulation
+data. This IRT entails the challenges of inference from large
+multimodal datasets and of optimally acquiring new data. In
+particular, we posit that the framework of OED, particularly when
+extended to the goal-oriented setting, can be used to create scalable,
+principled methods to manage DOE experimental, computational,
+observational, and modeling assets (e.g., time/cost/capacity of
+computing and experimental facilities). Our research will develop new
+OED methods that address the specific challenges of multiscale coupled
+systems. A central challenge is to devise algorithms to make tractable
+the solution of the resulting optimization problems, which have
+tri-level structure: the outer OED problem is constrained by an
+intermediate inverse problem, which in turn is constrained by an inner
+(complex multiscale) forward problem. Additional challenges include
+devising dynamic programming (DP) strategies to exploit sequentially
+arriving data to make the inverse problem tractable; rigorously
+reducing data dimensionality when filtering through the model is too
+expensive (the multi-experiment setting) or when bandwidth is
+insufficient; treating the multiobjective optimization problems that
+arise in OED problems characterized by multimodal data; OED in the
+presence of model inadequacy, which is usually ignored; OED to devise
+fine-scale simulation campaigns that optimally inform coarse-scale
+models without having to invoke the fine-scale simulations during the
+optimization; and integrating data acquired at multiple scales in the
+inverse solution. The specific tasks are described below; the
+corresponding milestones are shown in Figure 2.  Task 2.1: Large-scale
+nonlinear Bayesian OED. §3.6 described two complementary strategies
+for the Bayesian OED problem: one using nested Monte Carlo sampling to
+produce consistent estimators of expected information gain for
+arbitrarily non-Gaussian problems, and the other using multiple
+Laplace
+
+approximations to solve problems at the largest scales. We will use
+the structure-exploiting features of the second approach to develop
+Monte Carlo strategies that extend the first approach, thus
+constructing consistent estimators of information theoretic OED
+objectives for large-scale non-Gaussian problems.  We will use
+low-rank Hessian approximations and fast numerical approximations of
+analytical results for the linear-Gaussian case to provide structure
+for principled variance reduction schemes, e.g., multiple importance
+sampling and control variates to estimate log-normalizing constants of
+the Bayesian posterior under multiple realizations of the data. A key
+result will be information theoretic OED methods that scale (nearly)
+independently of parameter and data dimension even in nonlinear and
+non-Gaussian settings.  Task 2.2: DP for sequential optimal
+experimental design (sOED). Typical current practice for designing
+multiple experiments uses suboptimal approaches: open-loop design that
+chooses all experiments simultaneously with no feedback of
+information, or greedy design that optimally selects the next
+experiment without accounting for future observations and
+dynamics. The optimal design of multiple experiments instead follows
+from casting sequential design as a DP. The solution of this problem
+is not a set of design parameters, but rather a feedback control
+policy—a decision rule that specifies which experiment to perform as a
+function of the current system state. While a basic DP formulation of
+this problem has been elucidated in our recent work [104], its
+solution presents enormous computational challenges for nonlinear
+models with continuous parameter, design, and observation
+spaces. Approximate DP strategies are required. Also essential are
+fast approximate algorithms for sequential inference, as the DP
+approach requires assessments of information gain from prior to
+posterior (or other objectives appropriate to the OED problem) for
+many “trajectories” of future designs and observations.  Task 2.3:
+Optimal experimental design with mean objective cost of
+uncertainty. The goal of this task is to develop the theory of OED
+within the framework of the mean objective cost of uncertainty (MOCU)
+[61, 238]. We will generalize the existing OED/MOCU theory developed
+in the context of biological networks [65,66] to general stochastic
+processes, and then develop approximation, algorithmic, and
+computational tools to perform the computations required for the OED
+theory in practical models.  From a theoretical perspective, we will
+characterize the information content of experiments relative to the
+MOCU and develop OED. Prior construction requires mapping domain
+knowledge into a representation compatible with minimum mean square
+error optimization. This has been achieved in genomics by mapping
+biochemical regulatory pathways into statistical distributions. We
+will repeat this in the context of the application areas by
+identifying what domain knowledge is available in specific
+applications, and transforming that knowledge mathematically into a
+prior.
+
+Data–Model Integration: Inverse Problem Formulation and Solution The
+third thrust focuses on the formulation and solution of large-scale
+inverse problems, as a mathematically rigorous way to achieve
+data-model integration. The critical need to characterize uncertainty
+is challenging enough; the multiscale, multiphysics nature of the
+forward models elevates the inverse prob- 19 Proposal Tracking Number:
+232209 Received Date: 7/11/2017 Page Number: 22 lems to the level of
+grand challenges. Particular challenges we will address include:
+rigorous formulation and solution of multiscale inverse problems when
+the data describe fine-scale processes (as typically stem from truth
+models) or coarse-scale processes (as typically stem from system-level
+observations); rigorous formulation and solution of multiphysics
+inverse problems when the forward model physics is uncoupled but the
+inverse problem is coupled via correlations of the parameter fields,
+or when the forward models include multiple interacting physics each
+with its own data; the high dimensionality resulting from
+discretization of infinite dimensional parameter fields and the
+discovery of low dimensional structure via novel randomized
+algorithms; the ability to exploit adjoint-based higher-order (2nd and
+even 3rd) derivative information—which is critical for dimensionality
+reduction and structure exploitation in inverse problems—for highly
+nonlinear, time-dependent, and multiscale/multiphysics forward models
+with sequential and/or multimodal data; variational Bayesian inverse
+methods based on deterministic couplings between probability
+distributions, and the exploitation of multifidelity models and
+goal-oriented inference objectives to make exploring the posterior
+more tractable. The specific tasks are described below; the
+corresponding milestones are shown in Figure 3.  Task 3.1: Exploiting
+low-dimensional structure in Bayesian inverse problems. Current
+scalable approaches to Bayesian inversion rely on the identification
+of directions in parameter space that are most informed by the data,
+relative to the prior. In (classically) ill-posed inverse problems,
+the number of such directions is typically dimension-independent and
+often small, e.g., [29–32,79], resulting in 1000X e↵ective dimension
+reduction for some million-dimensional Bayesian inverse problems
+[28,108]. Yet not all inverse problems of practical interest have this
+kind of structure. For example, the multiscale problems addressed here
+will depart from this regime, as full-field observations of truth
+model simulations may comprise highly informative data. Moreover,
+while optimal dimension reduction strategies for linear Bayesian
+inverse problems are now well understood, analogous theory and
+computational methods for nonlinear inverse problems are critically
+lacking. We will address these gaps by developing theory and
+algorithms to exploit a broader array of low-dimensional structures in
+high-dimensional probability distributions, replacing heuristics with
+methods that provide guarantees on error and performance. First, the
+identification of data-informed subspaces in non-Gaussian settings
+will be guided by log-Sobolev bounds [22, 129, 179] that relate
+divergences between distributions to averaged gradient and Hessian
+information. Second, for inverse problems that are well-informed but
+where the data have “local” e↵ect (as is common in geophysical data
+assimilation), we will develop algorithms that harness conditional
+independence properties of the posterior, which can be described with
+probabilistic graphical models.  A key challenge in inverse problems
+governed by PDEs is to learn the relevant graph structure; here,
+practical numerical methods will need to employ graph sparsification,
+where weak dependencies are omitted. We will develop methods that
+relate the conditional independence structure of the posterior to
+Hessian information via domain decomposition-like ideas, along with
+methods for optimally sparsifying undirected graphical models guided
+by upper bounds on the error in the resulting posterior approximations
+(in contrast with previous work providing lower bounds [114,
+  116]). The graphical approach will also be useful for describing
+conditional independence relationships in multiscale systems
+[183]. Third, we will address problems where Hessians (or averaged
+Hessians) have large rank but admit hierarchical structure; these are
+expected to arise in hyperbolic inverse problems. A key step will be
+to understand how this hierarchical structure is reflected in
+factorizations of the posterior, and then how to exploit it in
+sampling schemes—both MCMC and the variational methods described
+below.  Task 3.2: Variational Bayesian inference via deterministic
+couplings. MCMC, sequential Monte Carlo (SMC), and importance sampling
+are the current workhorses of Bayesian computation.  Variational
+algorithms based on the construction of deterministic couplings
+between probability distributions, induced by transport maps, provide
+an attractive alternative—enabling independent and unweighted Monte
+Carlo sampling or the construction of distribution-specific sparse
+quadrature or quasi- Monte Carlo rules; the latter can substantially
+improve upon the n 1/2 Monte Carlo convergence rate.  20 Proposal
+Tracking Number: 232209 Received Date: 7/11/2017 Page Number: 23 We
+will advance a scalable transport approach to inference, focusing on
+optimization methods, adaptive map representations, and the use of
+gradient flows and nonparametric approximations. This e↵ort will
+harness advances in other foundational mathematics areas, particularly
+large-scale optimization (§3.7) and scalable kernel methods (§3.9),
+and will build on new results [210] relating sparsity and
+decomposability of transport maps to the conditional independence
+structure of the posterior.  Task 3.3: Sequential Bayesian
+inference. Inference from sequential data presents a number of
+distinct challenges, both in static (time-independent) and dynamic
+models. As data arrive, non- Gaussian posterior distributions must be
+updated with a computational e↵ort that does not grow in time. Many
+current approaches rely on Gaussian approximations and strong
+regularizing assumptions; alternatives include SMC and particle
+filtering approaches that (broadly speaking [158,206]) degenerate in
+high dimensions. Joint state–parameter inference in nonlinear
+dynamical models presents additional challenges [122]. We will address
+these gaps by developing consistent transport-based algorithms for
+sequential inference. These variational approaches will build on the
+“meta-algorithms” proposed in [210], avoiding importance
+sampling/resampling and hence particle degeneracy. Our approach will
+employ recursions that compose nonlinear maps for the purposes of
+filtering, parameter inference, and full-trajectory or fixed-point
+smoothing. Key questions include how errors propagate through the
+successive composition of transport maps, and how both regularization
+and the intrinsic dynamics of the model a↵ect the magnitude/evolution
+of these errors. A related e↵ort is to understand how to balance
+computational e↵ort with accuracy in high-dimensional non-Gaussian
+problems, and how the choice of regularization strategy enters this
+balance to preserve stability and other desirable characteristics.
+
+Transport maps via PDE-constrained optimization. The advantage of
+transport maps is their potential for more predictable algorithmic
+performance and scalability than Monte Carlo methods. This very
+promising approach for sampling has not been scaled to large problem
+sizes and has not been parallelized.  The idea is to sample from a
+reference distribution (which is inexpensive to sample from) and then
+transform the reference distribution (or its samples) to the target
+distribution using pure transport. The velocity in the pure transport
+equation is found by solving a PDE-constrained optimization
+problem. The objective function measures similarity between the
+reference and the target probability distribution. The PDE constraint
+is a linear transport equation in high dimensions (formally, the
+parameter dimension). We will employ an adjoint-based Newton solver
+and a radial function-based discretization (a meshless method),
+that can be accelerated using ASKIT. Since we target
+high-dimensional problems, the key question is the appropriate
+discretization of the forward/adjoint transport equations. Our
+starting point will be a meshless radial basis method. Key questions
+are remeshing and repartitioning strategies, as well as Hessian
+preconditioners.
